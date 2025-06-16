@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startups em Assaí </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar bg-white/95 backdrop-blur-md shadow-lg" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 flex-shrink-0">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-blue to-secondary-blue rounded-xl flex items-center justify-center shadow-lg mx-auto">
+                        <img src="./src/Foguete.png" alt="Logo Prefeitura" class="w-6 h-6 sm:w-8 sm:h-8 mx-auto">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-primary-blue font-bold text-lg sm:text-xl">Startups em Assaí</span>
+                        <span class="text-gray-500 text-xs font-medium hidden sm:block">Startups que Inovam nossa cidade</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary-blue font-medium transition-all duration-300 relative">
+                        Página Inicial
+                    </a>
+                    <a href="#startups" class="nav-link text-gray-700 hover:text-primary-blue font-medium transition-all duration-300 relative">
+                        Startups
+                    </a>
+                    <a href="#fases" class="nav-link text-gray-700 hover:text-primary-blue font-medium transition-all duration-300 relative">
+                        Fases
+                    </a>
+                    <a href="#contato" class="nav-link text-gray-700 hover:text-primary-blue font-medium transition-all duration-300 relative">
+                        Contato
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-xl text-gray-700 hover:text-primary-blue hover:bg-gray-100 transition-all duration-300 flex-shrink-0" id="mobile-menu-btn" aria-label="Menu" aria-expanded="false">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="#home" class="mobile-nav-link block px-4 py-3 text-gray-700 hover:text-primary-blue hover:bg-blue-50 rounded-xl transition-all duration-300 font-medium">
+                    <i class="fas fa-home mr-3 w-5 text-center"></i>Página Inicial
+                </a>
+                <a href="#startups" class="mobile-nav-link block px-4 py-3 text-gray-700 hover:text-primary-blue hover:bg-blue-50 rounded-xl transition-all duration-300 font-medium">
+                    <i class="fas fa-rocket mr-3 w-5 text-center"></i>Startups
+                </a>
+                <a href="#fases" class="mobile-nav-link block px-4 py-3 text-gray-700 hover:text-primary-blue hover:bg-blue-50 rounded-xl transition-all duration-300 font-medium">
+                    <i class="fas fa-chart-line mr-3 w-5 text-center"></i>Fases
+                </a>
+                <a href="#contato" class="mobile-nav-link block px-4 py-3 text-gray-700 hover:text-primary-blue hover:bg-blue-50 rounded-xl transition-all duration-300 font-medium">
+                    <i class="fas fa-envelope mr-3 w-5 text-center"></i>Contato
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-background" id="hero-background"><img src="./src/prefeitura_empreendedora.jpg" alt="Prefeitura Empreendedora"></div>
+        <div class="hero-content">
+            <div class="anniversary-badge">
+                <img src="./src/Logo_VDS_Negativo.png" alt="Brasão de Assaí" class="hero-logo">
+            </div>
+            <h1 class="hero-title">Startups que inovam nossa cidade</h1>
+            <p class="hero-subtitle">Empreender no Presente, Transformar o Futuro, Startups que Conectam Assaí ao Mundo</p>
+        </div>
+    </section>
+
+    <!-- Startup Section -->
+    <section id="startups" class="startup">
+        <div class="section-title">Startups</div>
+        <h2 class="startup-title">Conheça as Startups de Assaí</h2>
+        
+        <div class="startup-container">
+            <div class="startup-card">
+                <div class="startup-icon-container">
+                    <div class="startup-icon-overlay"></div>
+                    <img class="startup-icon" src="./src/SunRise.png" alt="SunRise Logo">
+                </div>
+                <div class="startup-content">
+                    <h3 class="startup-name">SunRise</h3>
+                    <p class="startup-description">
+                        A SunRise Chemistry & Innovation, com sede em Assaí–PR, atua na fabricação de biocombustíveis com foco em inovação e sustentabilidade. Desde 2024, vem conquistando prêmios e reconhecimento por suas soluções limpas para o futuro da energia.
+                    </p>
+                    <div class="startup-badges">
+                        <span class="badge">Biocombustíveis</span>
+                        <span class="badge">Sustentabilidade</span>
+                        <span class="badge">Inovação</span>
+                    </div>
+                    <div class="button-container">
+                        <button class="startup-button" id="startup-button">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fases Section -->
+    <section id="fases" class="fases">
+        <div class="section-title">Fases de uma Startup</div>
+        <h2 class="fases-title">Já pensou em criar uma Startup?</h2>
+        <p class="fases-subtitle">
+            Como em um jogo, cada fase exige estratégia, evolução e coragem. Prove que consegue zerar esse game e ao final, encontre o investidor certo para transformar sua ideia em realidade.
+        </p>
+        
+        <div class="fases-grid">
+            <div class="fase-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="fase-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Idealização</h3>
+                <p>É aqui que tudo começa. A fase de idealização é o ponto de partida das startups: onde surgem as ideias, são identificados problemas reais e nascem as primeiras soluções.</p>
+            </div>
+            
+            <div class="fase-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="fase-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Operação</h3>
+                <p>Agora é pra valer. Na fase de operação, a startup entra em ação: o produto é entregue, os processos são ajustados e os clientes começam a chegar. É o momento de crescer com foco, eficiência e consistência.</p>
+            </div>
+            
+            <div class="fase-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="fase-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Tração</h3>
+                <p>É hora de acelerar. Na fase de tração, a startup já validou seu modelo e busca escalar. As métricas ganham força, o público cresce e o negócio se consolida no mercado. É o começo da expansão.</p>
+            </div>
+            
+            <div class="fase-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="fase-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Escala</h3>
+                <p>Crescer com estratégia. Na fase de escala, a startup expande operações, entra em novos mercados e multiplica resultados. É quando o crescimento deixa de ser pontual e se torna exponencial.</p>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h3>Pronto para começar?</h3>
+            <p>Envie sua Startup para nós!</p>
+            <button class="cta-button" id="cta-button">Enviar Proposta</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white py-12 sm:py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 50px 50px;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-8 sm:mb-12">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-accent-gold to-yellow-500 rounded-2xl flex items-center justify-center">
+                            <img src="./src/Brasao_Assai.png" alt="Brasão da Prefeitura de Assaí" class="w-8 h-8 sm:w-12 sm:h-12 mx-auto d-block">
+                        </div>
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-bold">Prefeitura Municipal de Assaí</h3>
+                            <p class="text-blue-200 text-sm sm:text-base">Inovando a cada nascer do Sol</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6 max-w-md text-sm sm:text-base">Trabalhando incansavelmente para o desenvolvimento e bem-estar de todos os cidadãos assaienses, construindo um futuro próspero e sustentável.</p>
+                
+                <!-- Redes Sociais -->
+                <div class="flex justify-center space-x-3 sm:space-x-4">
+                    <a href="#" class="social-icon-enhanced facebook">
+                        <i class="fab fa-facebook-f text-lg sm:text-xl"></i>
+                    </a>
+                    <a href="#" class="social-icon-enhanced instagram">
+                        <i class="fab fa-instagram text-lg sm:text-xl"></i>
+                    </a>
+                    <a href="#" class="social-icon-enhanced youtube">
+                        <i class="fab fa-youtube text-lg sm:text-xl"></i>
+                    </a>
+                    <a href="#" class="social-icon-enhanced whatsapp">
+                        <i class="fab fa-whatsapp text-lg sm:text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contato -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-6">Contato</h3>
+                <div class="space-y-3 sm:space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-accent-gold"></i>
+                        <span class="text-gray-300 text-sm sm:text-base">contato@assai.pr.gov.br</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-phone text-accent-gold"></i>
+                        <span class="text-gray-300 text-sm sm:text-base">(43) 3262-1234</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-map-marker-alt text-accent-gold"></i>
+                        <span class="text-gray-300 text-sm sm:text-base">Centro, Assaí - PR</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links Úteis -->
+            <div>
+                <h3 class="text-lg sm:text-xl font-bold mb-4 sm:mb-6">Links Úteis</h3>
+                <div class="space-y-2 sm:space-y-3">
+                    <a href="#" class="block text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-base">Portal da Transparência</a>
+                    <a href="#" class="block text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-base">Licitações</a>
+                    <a href="#" class="block text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-base">Concursos</a>
+                    <a href="#" class="block text-gray-300 hover:text-white transition-colors duration-300 text-sm sm:text-base">Ouvidoria</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="border-t border-gray-700 pt-6 sm:pt-8 text-center">
+            <p class="text-gray-400 text-sm sm:text-base">&copy; 2024 Prefeitura Municipal de Assaí. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
